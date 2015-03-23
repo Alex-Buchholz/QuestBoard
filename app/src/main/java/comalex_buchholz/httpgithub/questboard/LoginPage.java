@@ -76,7 +76,7 @@ public class LoginPage extends ActionBarActivity {
         });
     }
 
-    //Email vaildation method.
+    //Email validation method.
     public static boolean isEmailValid(CharSequence email) {
         if (TextUtils.isEmpty(email)) {
             return false;
