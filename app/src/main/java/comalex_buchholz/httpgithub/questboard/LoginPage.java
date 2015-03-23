@@ -7,8 +7,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.Patterns;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -79,7 +77,7 @@ public class LoginPage extends ActionBarActivity {
     }
 
     //Email vaildation method.
-    public final static boolean isEmailValid(CharSequence email) {
+    public static boolean isEmailValid(CharSequence email) {
         if (TextUtils.isEmpty(email)) {
             return false;
         } else {
@@ -94,7 +92,7 @@ public class LoginPage extends ActionBarActivity {
         startActivity(intent);
     }
 
-    //KingdomAPI query - post data.
+    //Retrofit API call to post Email.
     private void postData(String email) {
 
         RestAdapter adapter = new RestAdapter.Builder().setEndpoint(ENDPOINT).build();
@@ -125,7 +123,7 @@ public class LoginPage extends ActionBarActivity {
             }
         });
     }
-
+/*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -138,4 +136,5 @@ public class LoginPage extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    */
 }

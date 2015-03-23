@@ -34,8 +34,7 @@ public class KingdomAdapter extends RecyclerView.Adapter<KingdomAdapter.KingdomV
     @Override
     public KingdomViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         View view = inflater.inflate(R.layout.custom_kingdom_row, viewGroup, false);
-        KingdomViewHolder holder = new KingdomViewHolder(view);
-        return holder;
+        return new KingdomViewHolder(view);
     }
 
     @Override
@@ -45,7 +44,6 @@ public class KingdomAdapter extends RecyclerView.Adapter<KingdomAdapter.KingdomV
         viewHolder.kingdomName.setText(current.name);
         Context context = viewHolder.icon.getContext();
         PicassoLoad.loadImage(context, current.image, viewHolder.icon);
-
     }
 
     @Override

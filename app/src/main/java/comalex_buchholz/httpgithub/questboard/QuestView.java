@@ -9,6 +9,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Toast;
+
 import retrofit.Callback;
 import retrofit.RestAdapter;
 import retrofit.RetrofitError;
@@ -64,6 +65,7 @@ public class QuestView extends ActionBarActivity implements ViewPager.OnPageChan
         toolbar.setTitle(area.name);
     }
 
+    //Retrofit API call to request details of a Kingdom and its quests.
     private void requestData(int id) {
 
         RestAdapter adapter = new RestAdapter.Builder().setEndpoint(ENDPOINT).build();
@@ -107,6 +109,7 @@ public class QuestView extends ActionBarActivity implements ViewPager.OnPageChan
     }
 }
 
+//QuestAdapter Class - Adapter for ViewPager
 class QuestAdapter extends FragmentPagerAdapter {
     private AreaInformation area;
 
@@ -119,10 +122,10 @@ class QuestAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
 
-            case 0:
+            case 0: //Position 0: Title page
                 return QuestFragmentTitle.newInstance(area.name, area.climate, area.population,
                         area.image, area.quests.size());
-            default:
+            default: //Position n: Quest page
                 return QuestFragmentN.newInstance(area.quests.get(position-1).name,
                         area.quests.get(position-1).description,
                         area.quests.get(position-1).giver.name,

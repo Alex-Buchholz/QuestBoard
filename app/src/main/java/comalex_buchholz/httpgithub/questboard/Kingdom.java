@@ -47,7 +47,7 @@ public class Kingdom extends ActionBarActivity {
         toolbar = (Toolbar) findViewById(R.id.kingdom_bar);
         setSupportActionBar(toolbar);
         SharedPreferences sp = getSharedPreferences(filename, 0);
-        getSupportActionBar().setTitle(sp.getString("E-Mail", null).toString());
+        getSupportActionBar().setTitle(sp.getString("E-Mail", null));
         toolbar.setLogo(R.drawable.logodrawable);
 
         //Request data using Retrofit.
@@ -85,6 +85,7 @@ public class Kingdom extends ActionBarActivity {
         });
     }
 
+    //Add back button functionality to close the app at this point.
     @Override
     public void onBackPressed() {
         Intent intent = new Intent(Intent.ACTION_MAIN);
