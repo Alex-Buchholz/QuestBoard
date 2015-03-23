@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="comalex_buchholz.httpgithub.questboard.QuestView">
+    <!--item
+        android:id="@+id/backButton"
+        android:title="@string/back"
+        android:icon="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+        app:showAsAction="always"
+        android:orderInCategory="0"
+        /-->
+</menu>

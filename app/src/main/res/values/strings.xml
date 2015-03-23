@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Quest Board</string>
+
+    <string name="log_out">Log Out</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_kingdoms">Kingdoms</string>
+    <string name="title_activity_kingdom">Kingdom</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_quest_view">QuestView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="back">back</string>
+</resources>

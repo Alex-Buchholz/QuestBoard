@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comalex_buchholz.httpgithub.questboard.QuestView$PlaceholderFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:id="@+id/imageViewGiver"
+        android:src="@drawable/abc_btn_check_material"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/textViewQuestGiver"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name of Quest"
+        android:id="@+id/textViewQuestName" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/tealbar"
+        android:scaleType="centerCrop"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/textViewQuestName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Quest Desc"
+        android:id="@+id/textViewQuestDesc"
+        android:layout_below="@+id/textViewQuestName"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Posted By:"
+        android:id="@+id/textViewGiverDesc"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/textViewQuestDesc"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Name of Quest Giver"
+        android:paddingLeft="16dp"
+        android:id="@+id/textViewQuestGiver"
+        android:layout_below="@+id/textViewGiverDesc"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

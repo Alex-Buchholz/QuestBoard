@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comalex_buchholz.httpgithub.questboard.Kingdom">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/kingdomList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewKingdomList"
+        android:layout_marginTop="15dp"
+     />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewKingdomList"
+        android:paddingTop="10dp"
+        android:paddingLeft="16dp"
+        android:text="Kingdoms"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp"
+        android:layout_below="@+id/kingdom_bar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/tealbar"
+        android:scaleType="centerCrop"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:layout_below="@id/textViewKingdomList"/>
+
+    <include
+        android:id="@+id/kingdom_bar"
+        layout="@layout/kingdom_bar">
+
+        </include>
+
+</RelativeLayout>

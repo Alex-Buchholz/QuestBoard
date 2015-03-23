@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comalex_buchholz.httpgithub.questboard.QuestView$PlaceholderFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:id="@+id/imageViewKingdom"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:layout_above="@+id/textViewKingdomName"
+        android:src="@drawable/abc_btn_check_material"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/tealbar"
+        android:scaleType="centerCrop"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/textViewKingdomName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Kingdom Name"
+        android:id="@+id/textViewKingdomName"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Climate:"
+        android:id="@+id/textViewClimate"
+        android:layout_below="@+id/textViewKingdomName"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Population:"
+        android:id="@+id/textViewPopulation"
+        android:paddingLeft="16dp"
+        android:layout_below="@+id/textViewClimate"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Number of Quests:"
+        android:id="@+id/textViewNumOfQuests"
+        android:paddingLeft="16dp"
+        android:layout_below="@+id/textViewPopulation"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0"
+        android:id="@+id/textViewNumOfQuestsInt"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@id/textViewNumOfQuests"
+        android:layout_below="@+id/textViewPopulation"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Swipe to view available quests."
+        android:id="@+id/textViewInstSwipe"
+        android:paddingLeft="16dp"
+        android:layout_below="@+id/textViewNumOfQuests"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textViewClimateVar"
+        android:layout_below="@id/textViewKingdomName"
+        android:layout_above="@+id/textViewPopulation"
+        android:layout_toRightOf="@+id/textViewClimate"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textViewPopVar"
+        android:layout_toRightOf="@+id/textViewPopulation"
+        android:layout_below="@+id/textViewClimate"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="5dp"/>
+
+</RelativeLayout>
